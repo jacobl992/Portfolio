@@ -30,8 +30,26 @@ grid-column: 5 / 6;
 }
 #contactlink {
 grid-column: 7 / 8;
+}
 
 #topimagebox {
 	width: 100vw;
+	height: 100vw;
 	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+}
+
+/* if I set the grid to 100vw and 100vh, set cols and rows to dividing equally into that space with fr
+shouldnt the grid maintain its size and squeeze whatever i elements I put in, which hasnt happened. Why*/
+#mainpic {
+	width: 100vw;
+	height: auto;
+/*	grid-area: 1/1/11/20;*/
+}
+
+#profilepic {
+	width: 10vw;
+	height: auto;
+	grid-area: 16/8/17/9;
 }
