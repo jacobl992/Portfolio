@@ -2,3 +2,30 @@
   box-sizing: border-box;
 }
 
+#menu {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat (7,1fr);
+/*	border: 1px solid red;*/
+	background-color:   #f1ece8;
+	align-items: center;
+	padding: 0.6vw;
+}
+
+/*header h1 {
+margin: 0;
+font-family: verdana, sans-serif;
+font-size: 1.5vw;
+font-weight: 500;
+color: gray;
+}
+*/
+
+#pflink {
+grid-column: 2 / 3;
+}
+#abtmelink {
+grid-column: 4 / 5;
+}
+#contactlink {
+grid-column: 6 / 7;
