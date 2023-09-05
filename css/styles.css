@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+	font-family: verdana, sans-serif;
+	font-size: 2vw;
+	font-weight: 300;
+}
+
 #menu {
 	width: 100%;
 	display: grid;
@@ -26,6 +32,10 @@ img {
 	height: auto;
 }
 
+p {
+	margin: 0;
+}
+
 #pflink {
 grid-column: 2;
 }
@@ -36,19 +46,34 @@ grid-column: 4;
 grid-column: 6;
 }
 
-#topimagebox {
+#maingrid {
 	width: 100vw;
-	height: 55vw;
+	height: 150vw;
 	display: grid;
-	grid-template-columns: repeat(11, 1fr);
-	grid-template-rows: repeat(20, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(40, 1fr);
 }
 
 #mainpic {
-	grid-area: 1/1/11/20;
+	grid-area: 1/1/10/20;
+}
+
+#profilebox {
+	display: flex;
+	grid-column: 2/10;
+	grid-row: 16/21;
+	flex-wrap: wrap;
+	gap: 3vw;
+	font-size: 3vw;
+	align-items: center;
+	justify-content: center;
 }
 
 #profilepic {
-	/*grid-column: 7/8;
-	grid-row: 16/19;*/
+	width: 15vw;
+	height: auto;
+}
+
+#profiletext {
+	
 }
