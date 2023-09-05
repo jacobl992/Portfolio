@@ -27,6 +27,28 @@ padding: 0vw;
 margin: 0;
 }
 
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+.menu-h {
+	font-family: verdana, sans-serif;
+	font-size: 3vw;
+	font-weight: 6000;
+	color: #2a41a6;
+	padding: 0vw;
+	margin: 0;
+}
+
 img {
 	width: 100%;
 	height: auto;
