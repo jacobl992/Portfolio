@@ -51,7 +51,7 @@ grid-column: 6;
 	height: 150vw;
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: repeat(20, 1fr);
+	grid-template-rows: repeat(25, 1fr);
 	background-color:   #e9f0f7;
 }
 
@@ -82,17 +82,27 @@ grid-column: 6;
 
 #porthead {
 	grid-column: 2/19;
-	grid-row: 22/22;
+	grid-row: 23/23;
 	margin: 0;
 	font-size: 4.5vw;
 	padding-left: 33vw;
 }
 /*probably a better way to align it in the center of the span of those columns*/
 
+h3{
+	margin: 0;
+}
 
 #exampleabox {
 	display: flex;
 	grid-column: 5/16;
-	grid-row: 23/23;
+	grid-row: 25/25;
 	flex-wrap: wrap;
+	gap: 2vw;
+	border: 1vw dashed #4162c3;
+	padding: 2vw;
+}
+
+.exampletext {
+	line-height: 3.5vw;
 }
