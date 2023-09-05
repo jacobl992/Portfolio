@@ -15,6 +15,7 @@ body {
 	justify-items: center;
 	padding: 0.6vw;
 	background-color: #f1ece8;
+	position: fixed;
 /*	border: 1px solid red;*/
 }
 
@@ -93,7 +94,10 @@ grid-column: 6;
 	font-size: 4vw;
 	align-items: center;
 	padding: 2vw;
-	background-color: #dcf4dc;
+}
+
+.fboxbgcolors {
+	background-color: #bdd2e1;
 }
 
 #profilepic {
@@ -180,8 +184,7 @@ grid-column: 6;
 	flex-direction: column;
 	gap: 3vw;
 	padding-left: 2vw;
-	border-top: 2vw solid #4162c3;
-	background-color:  #dcf4dc;
+	border-top: 1.5vw solid #4162c3;
 }
 
 #contactbox h2{
@@ -199,6 +202,24 @@ grid-column: 6;
 	flex-direction: row;
 	gap: 2vw;
 	padding: 2vw;
-	background-color: #dcf4dc;
 }
+
+/*example of media query
+i need mine to change porfotable example boxes to two abreast. */
+
+/*@media only screen and (min-width: 700px) {
+/*	this media query will only activate on screens (eg not print) and on a minimum width of 700 pixels
+	it says to add a column at 700pixels, and so on, at 1000,
+	the media query is overriding previous css, best to put it at the bottom.*/
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+/*	could at more rules in here, within media query brackets, eg changin colours and what have you as screen size increases, or even display: none; */
+}
+
+@media only screen and (min-width: 1000px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}*/
 
