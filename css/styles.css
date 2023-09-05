@@ -50,26 +50,26 @@ grid-column: 6;
 	width: 100vw;
 	height: 150vw;
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-columns: repeat(20, 1fr);
 	grid-template-rows: repeat(40, 1fr);
-	background-color:  #b4e8d3;
+	background-color:   #e9f0f7;
 }
 
 #mainpic {
-	grid-area: 1/1/10/20;
+	grid-area: 1/1/20/21;
 /*	padding: 2vw;*/
 }
 
 #welcomebox {
 	display: flex;
-	grid-column: 2/10;
+	grid-column: 3/19;
 	grid-row: 16/21;
 	flex-wrap: nowrap;
 	gap: 3vw;
 	font-size: 4vw;
 	align-items: center;
 	padding: 2vw;
-	background-color: #b4c4be;
+	background-color:  #c8f7c5;
 }
 
 #profilepic {
@@ -78,5 +78,19 @@ grid-column: 6;
 }
 
 #welcometext {
-	
 }
+
+#porthead {
+	grid-column: 2/19;
+	grid-row: 22/22;
+	margin: 0;
+	font-size: 4.5vw;
+	padding-left: 33vw;
+/*probably a better way to align it in the center of the span of those columns*/
+}
+
+/*#exampleabox {
+	display: flex;
+	grid-column: 3/19;
+	grid-row: 24/34;
+}*/
