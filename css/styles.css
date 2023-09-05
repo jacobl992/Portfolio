@@ -14,7 +14,7 @@ body {
 	grid-template-columns: 10vw auto 5vw auto 5vw auto 10vw;
 	justify-items: center;
 	padding: 0.6vw;
-	background-color:   #f1ece8;
+	background-color: #f1ece8;
 	/*	border: 1px solid red;*/
 }
 
@@ -52,21 +52,24 @@ grid-column: 6;
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: repeat(40, 1fr);
+	background-color:  #b4e8d3;
 }
 
 #mainpic {
 	grid-area: 1/1/10/20;
+/*	padding: 2vw;*/
 }
 
-#profilebox {
+#welcomebox {
 	display: flex;
 	grid-column: 2/10;
 	grid-row: 16/21;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	gap: 3vw;
-	font-size: 3vw;
+	font-size: 4vw;
 	align-items: center;
-	justify-content: center;
+	padding: 2vw;
+	background-color: #b4c4be;
 }
 
 #profilepic {
@@ -74,6 +77,6 @@ grid-column: 6;
 	height: auto;
 }
 
-#profiletext {
+#welcometext {
 	
 }
