@@ -48,22 +48,24 @@ grid-column: 6;
 
 #maingrid {
 	width: 100vw;
-	height: 150vw;
+	height: auto;
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: repeat(25, 1fr);
+	grid-template-rows: auto 4vw repeat(25, auto);
 	background-color:   #e9f0f7;
 }
 
 #mainpic {
-	grid-area: 1/1/20/21;
+/*	grid-area: 1/1/20/21;*/
+	grid-column: 1/21;
+	grid-row: 1/3;
 /*	padding: 2vw;*/
 }
 
 #welcomebox {
 	display: flex;
 	grid-column: 3/19;
-	grid-row: 16/21;
+	grid-row: 2/4;
 	flex-wrap: nowrap;
 	gap: 3vw;
 	font-size: 4vw;
@@ -82,28 +84,42 @@ grid-column: 6;
 
 #porthead {
 	grid-column: 2/19;
-	grid-row: 23/23;
-	margin: 0;
+	grid-row: 5/5;
+	margin: 2vw;
 	font-size: 4.5vw;
 	padding-left: 33vw;
 }
 /*probably a better way to align it in the center of the span of those columns*/
 
-h3{
+.example-head{
 	margin: 0;
-}
-
-#exampleabox {
-	display: flex;
-	grid-column: 5/16;
-	grid-row: 25/25;
-	flex-wrap: wrap;
-	gap: 2vw;
-	border: 1vw dashed #4162c3;
-	padding: 2vw;
-	background-color:  #f9f8e3 ;
+	font-size: 3vw;
 }
 
 .exampletext {
 	line-height: 3.5vw;
+}
+
+#exampleabox {
+	display: flex;
+	grid-column: 4/17;
+	grid-row: 6/6;
+	flex-wrap: wrap;
+	gap: 2vw;
+	border: 1vw dashed #4162c3;
+	padding: 2vw;
+	background-color:  #f9f8e3;
+	margin: 3vw;
+}
+
+#examplebbox {
+	display: flex;
+	grid-column: 4/17;
+	grid-row: 7/7;
+	flex-wrap: wrap;
+	gap: 2vw;
+	border: 1vw dashed #4162c3;
+	padding: 2vw;
+	background-color: #f9f8e3;
+	margin: 3vw;
 }
