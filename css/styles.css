@@ -82,9 +82,9 @@ grid-column: 6;
 	grid-row: 2/4;
 	flex-wrap: nowrap;
 	gap: 3vw;
-	font-size: 4vw;
+	font-size: 3vw;
 	align-items: center;
-	padding: 2vw;
+	padding: 1.5vw;
 	border: 1.5vw solid white;
 }
 
