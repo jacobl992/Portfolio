@@ -204,6 +204,9 @@ i need mine to change porfotable example boxes to two abreast. */
 		font-size: 2vw;
 		font-weight: 500;
 	}
+	#maingrid {
+		grid-template-rows: auto 4vw repeat(9, auto);
+	}
 	#welcomebox {
 		font-size: 2vw;
 		border: 0.5vw solid white;
@@ -213,7 +216,13 @@ i need mine to change porfotable example boxes to two abreast. */
 		width: 10vw;
 		height: auto;
 	}
-    #exampleabox {
+	#porthead {
+		font-size: 3vw;
+	}
+    .example-head{
+		font-size: 2vw;
+	}
+	#exampleabox {
 		grid-column: 2/10;
 		grid-row: 6/6;
     }
@@ -229,5 +238,30 @@ i need mine to change porfotable example boxes to two abreast. */
 		grid-column: 12/20;
 		grid-row: 7/7;
     }
+	#contactbox h2{
+		font-size: 2vw;
+	}
+	#contactbox p{
+		font-size: 1.5vw;
+	}
+	#contactbox {
+		grid-row: 10/10;
+		flex-direction: row;
+		padding-left: 4vw;
+		border-top: 1vw solid #4162c3;
+		align-items: center;
+	}
+	#contactpicbox {
+		grid-row: 11/11;
+		padding: 0vw;
+		padding-left: 3vw;
+		padding-right: 2vw;
+		padding-bottom: 2vw;
+		justify-content: space-evenly;
+	}
+	.contactpics {
+		width: 16vw;
+		height: auto;
+	}
 }
 
