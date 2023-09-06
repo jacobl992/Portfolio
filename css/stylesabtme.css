@@ -59,3 +59,17 @@ grid-column: 4;
 #contactlink {
 grid-column: 6;
 }
+
+#abtmaingrid {
+	width: 100vw;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: auto;
+	background-color:   #e9f0f7;
+}
+
+#abtmainpic {
+	grid-column: 1/21;
+	grid-row: 1/1;
+}
