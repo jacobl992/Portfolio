@@ -118,8 +118,6 @@ grid-column: 6;
 	line-height: 3.5vw;
 }
 
-/*I imagine I could simplify all the BELOW example boxes by using a class to specify common attributes!*/
-
 .examples {
 	display: flex;
 	flex-wrap: wrap;
