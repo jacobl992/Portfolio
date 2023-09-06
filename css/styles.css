@@ -83,7 +83,8 @@ grid-column: 6;
 	font-size: 3vw;
 	align-items: center;
 	padding: 1.5vw;
-	border: 1.5vw solid white;
+	border: 1.25vw solid white;
+/*	border-radius: 15%;*/
 }
 
 .fboxbgcolors {
@@ -91,11 +92,19 @@ grid-column: 6;
 }
 
 #profilepic {
-	width: 15vw;
+	width: 18vw;
 	height: auto;
+	border: 0.2vw solid white;
+	border-radius: 50%;
 }
 
 #welcometext {
+	line-height: 4vw;
+}
+
+#welcomespan {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 #porthead {
