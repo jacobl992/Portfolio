@@ -8,7 +8,7 @@ body {
 	font-weight: 300;
 }
 
-#menu {
+#abtmenubox {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 10vw auto 5vw auto 5vw auto 10vw;

@@ -3,12 +3,12 @@
 }
 
 body {
-	font-family: verdana, sans-serif;
+	font-family: 'Works Sans', verdana, sans-serif;
 	font-size: 2vw;
-	font-weight: 300;
+	/*font-weight: 300;*/
 }
 
-#menu {
+#menubox {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 10vw auto 5vw auto 5vw auto 10vw;
@@ -33,9 +33,9 @@ a:active {
 }
 
 .menu-h {
-	font-family: verdana, sans-serif;
+	font-family: 'Work Sans', verdana, sans-serif;
 	font-size: 3vw;
-	font-weight: 550;
+	font-weight: 500;
 	color: #2a41a6;
 	padding: 0vw;
 	margin: 0;
@@ -84,6 +84,7 @@ grid-column: 6;
 	align-items: center;
 	padding: 1.5vw;
 	border: 1.25vw solid white;
+	font-family: 'Courgette' , serif;
 /*	border-radius: 15%;*/
 }
 
@@ -161,9 +162,11 @@ grid-column: 6;
 	grid-row: 10/10;
 	flex-wrap: wrap;
 	flex-direction: column;
-	gap: 3vw;
+	gap: 2vw;
+	margin-top: 4vw;
 	padding-left: 2vw;
 	border-top: 1.5vw solid #4162c3;
+	font-family: 'Bitter', serif;
 }
 
 #contactbox h2{
