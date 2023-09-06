@@ -112,7 +112,8 @@ grid-column: 6;
 	grid-row: 5/5;
 	margin: 2vw;
 	font-size: 4.5vw;
-	padding-left: 33vw;
+	justify-self: center;
+	margin-top: 7vw;
 }
 /*probably a better way to align it in the center of the span of those columns*/
 
