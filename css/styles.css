@@ -94,6 +94,7 @@ grid-column: 6;
 	font-size: 4vw;
 	align-items: center;
 	padding: 2vw;
+	border: 1.5vw solid white;
 }
 
 .fboxbgcolors {
