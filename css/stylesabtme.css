@@ -14,7 +14,7 @@ body {
 	grid-template-columns: 10vw auto 5vw auto 5vw auto 10vw;
 	justify-items: center;
 	padding: 0.6vw;
-	background-color: #f1ece8;
+	background-color: #ca9fff;
 	position: fixed;
 /*	border: 1px solid red;*/
 }
@@ -65,7 +65,7 @@ grid-column: 6;
 	height: auto;
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: auto 4vw repeat(9, auto);
+	grid-template-rows: auto 4vw repeat(2, auto) repeat(10, 10vw);
 	background-color: #e9f0f7;
 }
 
@@ -95,7 +95,8 @@ grid-column: 6;
 .abtheads{
 	margin: 0;
 	font-size: 3vw;
-	padding: 2vw;
+	padding: 3vw;
+	margin: 2vw;
 }
 
 #photographer {
@@ -105,7 +106,42 @@ grid-column: 6;
 }
 
 #wl-seal {
-	grid-column: 3/12;
+	grid-column: 4/12;
 	grid-row: 5/8;
 	width: 40vw;
+}
+
+.photo-labels {
+	font-weight: 500;
+	color: white;
+}
+
+#seal-label {
+	grid-column: 4/12;
+	grid-row: 5/6;
+	padding: 2vw;
+}
+
+#wl-rab {
+	grid-column: 10/19;
+	grid-row: 6/9;
+	width: 40vw;
+}
+
+#rab-label {
+	grid-column: 10/19;
+	grid-row: 6/7;
+	padding: 2vw;
+}
+
+#wl-cow {
+	grid-column: 3/11;
+	grid-row: 7/10;
+	width: 40vw;
+}
+
+#cow-label {
+	grid-column: 3/11;
+	grid-row: 9/10;
+	padding: 2vw;
 }
