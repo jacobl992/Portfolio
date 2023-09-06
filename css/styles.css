@@ -120,10 +120,8 @@ grid-column: 6;
 
 /*I imagine I could simplify all the BELOW example boxes by using a class to specify common attributes!*/
 
-#exampleabox {
+.examples {
 	display: flex;
-	grid-column: 4/17;
-	grid-row: 6/6;
 	flex-wrap: wrap;
 	gap: 2vw;
 	border: 1vw dashed #4162c3;
@@ -132,40 +130,24 @@ grid-column: 6;
 	margin: 3vw;
 }
 
+#exampleabox {
+	grid-column: 4/17;
+	grid-row: 6/6;
+}
+
 #examplebbox {
-	display: flex;
 	grid-column: 4/17;
 	grid-row: 7/7;
-	flex-wrap: wrap;
-	gap: 2vw;
-	border: 1vw dashed #4162c3;
-	padding: 2vw;
-	background-color: #f9f8e3;
-	margin: 3vw;
 }
 
 #examplecbox {
-	display: flex;
 	grid-column: 4/17;
 	grid-row: 8/8;
-	flex-wrap: wrap;
-	gap: 2vw;
-	border: 1vw dashed #4162c3;
-	padding: 2vw;
-	background-color: #f9f8e3;
-	margin: 3vw;
 }
 
 #exampledbox {
-	display: flex;
 	grid-column: 4/17;
 	grid-row: 9/9;
-	flex-wrap: wrap;
-	gap: 2vw;
-	border: 1vw dashed #4162c3;
-	padding: 2vw;
-	background-color: #f9f8e3;
-	margin: 3vw;
 }
 
 #contactbox {
@@ -196,7 +178,6 @@ grid-column: 6;
 	padding: 2vw;
 	justify-content: space-around;
 }
-
 
 #bridgepic {
 	width: 20vw;
@@ -232,6 +213,9 @@ grid-column: 6;
 	}
     .example-head{
 		font-size: 2vw;
+	}
+	.examples {
+		border: 0.5vw dashed #4162c3;
 	}
 	#exampleabox {
 		grid-column: 2/10;
