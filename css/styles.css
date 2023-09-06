@@ -241,7 +241,7 @@ grid-column: 6;
 		grid-row: 10/10;
 		flex-direction: row;
 		padding-left: 4vw;
-		border-top: 1vw solid #4162c3;
+		border-top: 0.8vw solid #4162c3;
 		align-items: center;
 	}
 	#contactpicbox {
