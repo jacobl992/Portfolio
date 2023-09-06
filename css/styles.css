@@ -19,15 +19,6 @@ body {
 /*	border: 1px solid red;*/
 }
 
-header h1 {
-font-family: verdana, sans-serif;
-font-size: 3vw;
-font-weight: 550;
-color: #2a41a6;
-padding: 0vw;
-margin: 0;
-}
-
 a:link {
 	text-decoration: none;
 }
@@ -44,7 +35,7 @@ a:active {
 .menu-h {
 	font-family: verdana, sans-serif;
 	font-size: 3vw;
-	font-weight: 6000;
+	font-weight: 550;
 	color: #2a41a6;
 	padding: 0vw;
 	margin: 0;
@@ -208,19 +199,35 @@ grid-column: 6;
 /*example of media query
 i need mine to change porfotable example boxes to two abreast. */
 
-/*@media only screen and (min-width: 700px) {
-/*	this media query will only activate on screens (eg not print) and on a minimum width of 700 pixels
-	it says to add a column at 700pixels, and so on, at 1000,
-	the media query is overriding previous css, best to put it at the bottom.*/
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
+@media only screen and (min-width: 700px) {
+	.menu-h {
+		font-size: 2vw;
+		font-weight: 500;
+	}
+	#welcomebox {
+		font-size: 2vw;
+		border: 0.5vw solid white;
+		padding: 0.1vw;
+	}
+	#profilepic {
+		width: 10vw;
+		height: auto;
+	}
+    #exampleabox {
+		grid-column: 2/10;
+		grid-row: 6/6;
     }
-/*	could at more rules in here, within media query brackets, eg changin colours and what have you as screen size increases, or even display: none; */
+    #examplebbox {
+		grid-column: 12/20;
+		grid-row: 6/6;
+    }
+    #examplecbox {
+		grid-column: 2/10;
+		grid-row: 7/7;
+    }
+    #exampledbox {
+		grid-column: 12/20;
+		grid-row: 7/7;
+    }
 }
-
-@media only screen and (min-width: 1000px) {
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}*/
 
