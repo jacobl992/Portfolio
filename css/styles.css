@@ -146,6 +146,7 @@ grid-column: 6;
 .exampleseparation {
 	grid-column: 3/19;
 	width: 100%;
+	justify-self: center;
 	margin: 2vw;
 	height: 0.01vw;
 	color: #9d069d;
@@ -227,6 +228,9 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+	.nodesktop {
+		display: none;
+	}
 	.menu-h {
 		font-size: 2vw;
 		font-weight: 500;
@@ -252,24 +256,34 @@ footer {
 	.exampleboxes {
 		border: 0.5vw dashed #4162c3;
 	}
-	.exampleseparation {
-		display: none;
+	#hr-ab {
+		grid-row: 8/9;
+		height: 1px;
+		border: 0;
+	}
+	.vertical-line {
+		border-left: 1px solid #9d069d;
+		grid-column: 10/12;
+		grid-row: 6/10;
+		height: 90%;
+		margin-left: 5vw;
+		align-self: center;
 	}
 	#exampleabox {
-		grid-column: 2/10;
-		grid-row: 6/6;
+		grid-column: 2/11;
+		grid-row: 6/7;
     }
     #examplebbox {
-		grid-column: 12/20;
-		grid-row: 6/6;
+		grid-column: 11/20;
+		grid-row: 6/7;
     }
     #examplecbox {
-		grid-column: 2/10;
-		grid-row: 7/7;
+		grid-column: 2/11;
+		grid-row: 9/10;
     }
     #exampledbox {
-		grid-column: 12/20;
-		grid-row: 7/7;
+		grid-column: 11/20;
+		grid-row: 9/10;
     }
 	#contactbox h2{
 		font-size: 2vw;
@@ -278,14 +292,14 @@ footer {
 		font-size: 1.5vw;
 	}
 	#contactbox {
-		grid-row: 10/10;
+		grid-row: 10/11;
 		flex-direction: row;
 		padding-left: 4vw;
 		border-top: 0.8vw solid #4162c3;
 		align-items: center;
 	}
 	#contactpicbox {
-		grid-row: 11/11;
+		grid-row: 11/12;
 		padding: 0vw;
 		padding-left: 3vw;
 		padding-right: 2vw;
@@ -295,6 +309,12 @@ footer {
 	.contactpics {
 		width: 16vw;
 		height: auto;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.nomobile {
+		display: none;
 	}
 }
 
