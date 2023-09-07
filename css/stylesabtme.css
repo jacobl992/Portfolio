@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: verdana, sans-serif;
+	font-family: 'Works Sans', verdana, sans-serif;
 	font-size: 2vw;
 	font-weight: 300;
 }
@@ -33,7 +33,6 @@ a:active {
 }
 
 .menu-h {
-	font-family: verdana, sans-serif;
 	font-size: 3vw;
 	font-weight: 550;
 	color: #2a41a6;
@@ -65,8 +64,8 @@ grid-column: 6;
 	height: auto;
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: auto 4vw repeat(2, auto) repeat(10, 10vw);
-	background-color: #e9f0f7;
+	grid-template-rows: auto 4vw repeat(2, auto) repeat(5, 10vw) auto;
+	background-color: #ebf7e8;
 }
 
 #abtmainpic {
@@ -90,6 +89,7 @@ grid-column: 6;
 
 .strikethrough {
 	text-decoration: line-through;
+	font-family: 'Bitter', serif;
 }
 
 .abtheads{
@@ -97,12 +97,12 @@ grid-column: 6;
 	font-size: 3vw;
 	padding: 3vw;
 	margin: 2vw;
+	grid-column: 1/21;
+	justify-self: center;
 }
 
 #photographer {
-	grid-column: 1/21;
 	grid-row: 4/5;
-	justify-self: center;
 }
 
 #wl-seal {
@@ -144,4 +144,73 @@ grid-column: 6;
 	grid-column: 3/11;
 	grid-row: 9/10;
 	padding: 2vw;
+}
+
+#climbing-hd {
+	grid-row: 10/11;
+}
+
+.abtme-img-boxes {
+	display: flex;
+	grid-column: 3/19;
+	flex-direction: column;
+	gap: 3vw;
+	align-items: center;
+}
+
+.abtme-imgs{
+	width: 40vw;
+}
+
+.climbing-img-box {
+	grid-row: 11/12;
+}
+
+#hiker-hd {
+	grid-row: 12/13;
+}
+
+.climbing-img-box {
+	grid-row: 13/14;
+}
+
+#writer-hd {
+	grid-row: 14/15;
+	font-family: 'Courgette', serif;
+}
+
+.writer-img-box {
+	grid-row: 15/16;
+	padding-bottom: 5vw;
+}
+
+footer {
+	grid-column: 1/21;
+	grid-row: 16/17;
+	background-color: #ca9fff;
+	padding: 2vw;
+}
+
+@media only screen and (min-width: 800px) {
+	.menu-h {
+		font-size: 2vw;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	
+	.abtme-img-boxes {
+		display: flex;
+		grid-column: 2/20;
+		flex-direction: row;
+		gap: 3vw;
+		padding-left: 3vw;
+		padding-right: 3vw;
+	}
+	
+	.writer-img-box {
+		grid-row: 15/16;
+		padding-bottom: 5vw;
+		justify-self: center;
+	}
 }

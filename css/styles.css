@@ -134,6 +134,7 @@ grid-column: 6;
 	padding: 2vw;
 	background-color:  #f9f8e3;
 	margin: 3vw;
+/*	box-shadow: 1vw 1vw black;*/
 }
 
 #exampleabox {
@@ -197,6 +198,13 @@ grid-column: 6;
 
 #spikepic {
 	width: 20vw;
+}
+
+footer {
+	grid-column: 1/21;
+	grid-row: 12/13;
+	background-color: #ca9fff;
+	padding: 2vw;
 }
 
 @media only screen and (min-width: 700px) {
