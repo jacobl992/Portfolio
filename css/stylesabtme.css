@@ -7,7 +7,7 @@
 body {
     font-family: 'Works Sans', verdana, sans-serif;
     font-size: 2vw;
-    font-weight: 300;
+/*    font-weight: 300;*/
 }
 
 #abtmenubox {
@@ -29,8 +29,9 @@ a:active {
 }
 
 .menu-h {
+    font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
-    font-weight: 550;
+    font-weight: 400;
     color: #2a41a6;
     padding: 0vw;
     margin: 0;
@@ -189,7 +190,7 @@ footer {
     padding: 2vw;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
     .menu-h {
         font-size: 2vw;
     }

@@ -29,9 +29,9 @@ a:active {
 }
 
 .menu-h {
-    font-family: 'Work Sans', verdana, sans-serif;
+    font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
-    font-weight: 500;
+    font-weight: 550;
     color: #2a41a6;
     padding: 0vw;
     margin: 0;
@@ -80,7 +80,7 @@ p {
     gap: 3vw;
     font-size: 3vw;
     align-items: center;
-    padding: 1.5vw;
+    padding: 1vw;
     border: 1.25vw solid white;
     font-family: 'Courgette', serif;
 }
@@ -90,10 +90,11 @@ p {
 }
 
 #profilepic {
-    width: 18vw;
+    width: 16vw;
     height: auto;
     border: 0.2vw solid white;
     border-radius: 50%;
+/*    margin: 1vw;*/
 }
 
 #welcometext {
@@ -188,7 +189,7 @@ p {
 }
 
 #contactbox h2 {
-    padding-top: 2vw;
+    padding: 1vw;
 }
 
 #contactbox p {
@@ -245,8 +246,9 @@ footer {
     }
 
     #profilepic {
-        width: 10vw;
+        width: 11vw;
         height: auto;
+        margin: 1vw;
     }
 
     #porthead {
@@ -301,7 +303,7 @@ footer {
     }
 
     #contactbox p {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     #contactbox {
