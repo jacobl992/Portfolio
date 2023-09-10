@@ -16,7 +16,7 @@ body {
     grid-template-columns: 10vw auto 5vw auto 5vw auto 10vw;
     justify-items: center;
     padding: 0.6vw;
-    background-color: rgba(202, 159, 255, 0.85);
+    background-color: rgba(241, 229, 255, 0.85);
     /*hexadecimal color is #ca9fff*/
     position: fixed;
 }
@@ -186,7 +186,7 @@ p {
 footer {
     grid-column: 1/21;
     grid-row: 16/17;
-    background-color: #ca9fff;
+    background-color: rgba(241, 229, 255, 0.85);
     padding: 2vw;
 }
 
