@@ -165,6 +165,19 @@ p {
     grid-row: 11/12;
 }
 
+.climb-trans {
+    width: 30vw;
+    height: 20vw;
+    background-image: url("../images/climbinga.jpg");
+    background-size: cover;
+    transition: 1.5s;
+}
+
+.climb-trans:hover {
+    background-image: url("../images/climbingc.jpg");
+    transform: rotate(360deg);
+}
+
 #hiker-hd {
     grid-row: 12/13;
 }
