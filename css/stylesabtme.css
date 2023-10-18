@@ -7,6 +7,7 @@
 body {
     font-family: 'Works Sans', verdana, sans-serif;
     font-size: 2vw;
+    background-color: #ebf7e8;
 }
 
 #abtmenubox {
@@ -61,7 +62,7 @@ p {
     height: auto;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: auto 4vw repeat(2, auto) repeat(5, 10vw) auto;
+    grid-template-rows: auto 4vw auto;
     background-color: #ebf7e8;
 }
 
@@ -92,80 +93,27 @@ p {
 .abtheads {
     margin: 0;
     font-size: 3vw;
-    padding: 3vw;
-    margin: 2vw;
+    padding: 1vw;
+    margin: 1vw;
     grid-column: 1/21;
     justify-self: center;
 }
 
-#photographer {
-    grid-row: 4/5;
-}
-
-#wl-seal {
-    grid-column: 4/12;
-    grid-row: 5/8;
-    width: 40vw;
-}
-
-.photo-labels {
-    font-weight: 500;
-    color: white;
-}
-
-#seal-label {
-    grid-column: 4/12;
-    grid-row: 5/6;
-    padding: 2vw;
-}
-
-#wl-rab {
-    grid-column: 10/19;
-    grid-row: 6/9;
-    width: 40vw;
-}
-
-#rab-label {
-    grid-column: 10/19;
-    grid-row: 6/7;
-    padding: 2vw;
-}
-
-#wl-cow {
-    grid-column: 3/11;
-    grid-row: 7/10;
-    width: 40vw;
-}
-
-#cow-label {
-    grid-column: 3/11;
-    grid-row: 9/10;
-    padding: 2vw;
-}
-
-#climbing-hd {
-    grid-row: 10/11;
-}
-
-.abtme-img-boxes {
+.abtme-img-box {
     display: flex;
-    grid-column: 3/19;
     flex-direction: column;
-    gap: 3vw;
+    gap: 1vw;
     align-items: center;
 }
 
 .abtme-imgs {
-    width: 40vw;
-}
-
-.climbing-img-box {
-    grid-row: 11/12;
+    width: 80vw;
+    height: auto;
 }
 
 .climb-trans {
-    width: 30vw;
-    height: 20vw;
+    width: 50vw;
+    height: 35vw;
     background-image: url("../images/climbinga.jpg");
     background-size: cover;
     transition: 1.5s;
@@ -176,29 +124,11 @@ p {
     transform: rotate(360deg);
 }
 
-#hiker-hd {
-    grid-row: 12/13;
-}
-
-.hiker-img-box {
-    grid-row: 13/14;
-}
-
-#writer-hd {
-    grid-row: 14/15;
-    font-family: 'Courgette', serif;
-}
-
-.writer-img-box {
-    grid-row: 15/16;
-    padding-bottom: 5vw;
-}
-
 footer {
     grid-column: 1/21;
-    grid-row: 16/17;
     background-color: rgba(241, 229, 255, 0.85);
     padding: 2vw;
+    margin-top: 4vw;
 }
 
 @media only screen and (min-width: 700px) {
@@ -220,7 +150,7 @@ footer {
     }
 
     .abtme-imgs {
-        width: 25vw;
+        width: 50vw;
     }
 
     .writer-img-box {
