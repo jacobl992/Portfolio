@@ -111,6 +111,29 @@ p {
     height: auto;
 }
 
+.mystery {
+    width: 50vw;
+    height: 36vw;
+    background-color: #000000;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-size: 25vw;
+}
+
+.mystery-qmark {
+    display: block;
+    border: solid 1vw gold;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    cursor: pointer;
+}
+
+.rab-img {
+    border: 1vw gold solid;
+}
+
 .climb-trans {
     width: 50vw;
     height: 35vw;
