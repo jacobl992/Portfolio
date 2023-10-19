@@ -120,6 +120,7 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 25vw;
+    position: relative;
 }
 
 .mystery-qmark {
@@ -132,6 +133,15 @@ p {
 
 .rab-img {
     border: 1vw gold solid;
+    display: none;
+}
+
+.next-button {
+    font-size: 2vw;
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    display: block;
 }
 
 .climb-trans {
