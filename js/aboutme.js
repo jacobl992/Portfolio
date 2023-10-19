@@ -15,7 +15,6 @@ questionMark.addEventListener("click", () => {
     mysteryBox.appendChild(nextButton)
     nextButton.innerText = "Next";
 });
-//theres a problem on the second time around when the next button doesnt appear
 
 nextButton.addEventListener("click", () => {
     buttonCount++;
@@ -23,10 +22,9 @@ nextButton.addEventListener("click", () => {
         rab.src = "images/cowMedium.jpeg";
     } else if (buttonCount === 3) {
     rab.src = "images/sealMedium.jpeg";
-    } else {
-        rab.style.display = "none";
-        nextButton.style.display = "none";
-        questionMark.style.display = "block";
+    } else  if (buttonCount === 4) {
+        rab.src = "images/rabSmall.jpeg";
+        buttonCount = 1;
     }
 })
 
