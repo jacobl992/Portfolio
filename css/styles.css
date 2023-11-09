@@ -135,6 +135,10 @@ p {
     box-shadow: 0.5vw 0.6vw 1vw rgb(0 0 0 / 0.5);
 }
 
+.portfolioImages {
+    width: 60vw;
+}
+
 #exampleabox {
     grid-row: 6/7;
 }
