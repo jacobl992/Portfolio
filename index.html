@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jake's Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Courgette&family=Work+Sans&display=swap" rel="stylesheet">
-        <meta name="description" content="Portfolio">
-        <meta name="author" content="Jake Lewis">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="images/tabicon.png" sizes="192x192">
-        <link rel="shortcut icon" href="images/tabicon.png">
-        <link rel="apple-touch-icon" href="images/tabicon.png">
-        <!-- <script defer src="js/index.js"></script> -->
-    </head>
-    <body>
-        <header>
-            <section id="menubox">
-                <div id="pflink">
-                    <a href="#porthead" class="menu-h">Portfolio</a>
-                </div>
-                <div id="abtmelink">
-                    <a href="./aboutme.html" class="menu-h">About Me</a>
-                    <!--will change about me to link when setting up other page -->
-                </div>
-                <div id="contactlink">
-                    <a href="#contacth" class="menu-h">Contact Details</a>
-                </div>
-            </section>
-        </header>
-        <section id="maingrid">
-            <img src="images/bluedeltaonly.jpg" alt="glacial river delta" id="mainpic">
-            <div id="welcomebox" class="">
-                <img src="images/portprof.png" alt="headshot of Jake" id="profilepic">
-                <p id="welcometext">A short sentence welcoming you to my portfolio page. <span id="welcomespan">Enjoy it!</span>
-                </p>
-            </div>
-            <h2 id="porthead">My Projects</h2>
-            <div id="exampleabox" class="exampleboxes">
-                <h3 id="example-a-head" class=example-head>PHP intro - <a href="https://2023-jakel.dev.io-academy.uk/collectorapp/index.php">Cake Collection</a></h3>
-                <img src="images/cakecollector.jpg" alt="Screenshot of cake collecition website" class="portfolioImages">
-                <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects of this project. A short sentence explaining aspects of this project.</p>
-            </div>
-            <hr id="hr-ab" class="exampleseparation">
-            <div id="examplebbox" class="exampleboxes">
-                <h3 id="example-b-head" class=example-head>Javascript game</h3>
-                <img src="images/boneyard.jpg" alt="Screenshot of javascript match pairs game" class="portfolioImages">
-                <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects of this project. A short sentence explaining aspects of this project.</p>
-            </div>
-            <hr id="hr-bc" class="exampleseparation nodesktop">
-            <div class="nomobile vertical-line"></div>
-            <div id="examplecbox" class="exampleboxes">
-                <h3 id="example-c-head" class=example-head>Example C</h3>
-                <img src="https://placedog.net/200/200" alt="Screenshot of Example C" class="portfolioImages">
-                <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects of this project. A short sentence explaining aspects of this project.</p>
-            </div>
-            <hr id="hr-cd" class="exampleseparation nodestop">
-            <div id="exampledbox" class="exampleboxes">
-                <h3 id="example-d-head" class=example-head>Example D</h3>
-                <img src="https://placedog.net/200/200" alt="Screenshot of Example D" class="portfolioImages">
-                <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects of this project. A short sentence explaining aspects of this project.</p>
-            </div>
-            <div id="contactbox" class="fboxbgcolors">
-                <h2 id="contacth">Contact Details:</h2>
-                <p>Email: jake_lewis12@hotmail.co.uk</p>
-            </div>
-            <div id="contactpicbox" class="fboxbgcolors">
-                <img src="images/bridge.jpg" alt="rickety bridge over rapids" id="bridgepic" class="contactpics">
-                <img src="images/tent.jpg" alt="green tent at sunrise" id="tentpic" class="contactpics">
-                <img src="images/spike.jpg" alt="spiked rock on beach" id="spikepic" class="contactpics">
-            </div>
-            <footer></footer>
-        </section>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jake's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Courgette&family=Work+Sans&display=swap"
+          rel="stylesheet">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Jake Lewis">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/tabicon.png" sizes="192x192">
+    <link rel="shortcut icon" href="images/tabicon.png">
+    <link rel="apple-touch-icon" href="images/tabicon.png">
+    <!-- <script defer src="js/index.js"></script> -->
+</head>
+
+<body>
+
+    <nav id="navbox">
+        <div id="pflink">
+            <a href="#porthead" class="menu-h">Portfolio</a>
+        </div>
+        <div id="abtmelink">
+            <a href="./aboutme.html" class="menu-h">About Me</a>
+        </div>
+        <div id="contactlink">
+            <a href="#contacth" class="menu-h">Contact Details</a>
+        </div>
+    </nav>
+
+
+    <div id="mainimagegrid">
+        <img src="images/bluedeltaonly.jpg" alt="glacial river delta" id="mainpic">
+        <div id="welcomebox" class="">
+            <img src="images/portprof.png" alt="headshot of Jake" id="profilepic">
+            <p id="welcometext">A short sentence welcoming you to my portfolio page. <span
+                    id="welcomespan">Enjoy it!</span>
+            </p>
+        </div>
+    </div>
+
+    <h2 id="portfoliohead">My Projects</h2>
+
+    <div id="exampleabox" class="exampleboxes">
+        <h3 id="example-a-head" class=example-head>PHP intro - <a
+                href="https://2023-jakel.dev.io-academy.uk/collectorapp/index.php">Cake Collection</a></h3>
+        <img src="images/cakecollector.jpg" alt="Screenshot of cake collecition website" class="portfolioImages">
+        <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects
+            of this project. A short sentence explaining aspects of this project.</p>
+    </div>
+
+    <hr id="hr-ab" class="exampleseparation">
+
+    <div id="examplebbox" class="exampleboxes">
+        <h3 id="example-b-head" class=example-head>Javascript game</h3>
+        <img src="images/boneyard.jpg" alt="Screenshot of javascript match pairs game" class="portfolioImages">
+        <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects
+            of this project. A short sentence explaining aspects of this project.</p>
+    </div>
+
+    <hr id="hr-bc" class="exampleseparation nodesktop">
+
+    <div class="nomobile vertical-line"></div>
+
+    <div id="examplecbox" class="exampleboxes">
+        <h3 id="example-c-head" class=example-head>Example C</h3>
+        <img src="https://placedog.net/200/200" alt="Screenshot of Example C" class="portfolioImages">
+        <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects
+            of this project. A short sentence explaining aspects of this project.</p>
+    </div>
+
+    <hr id="hr-cd" class="exampleseparation nodestop">
+
+    <div id="exampledbox" class="exampleboxes">
+        <h3 id="example-d-head" class=example-head>Example D</h3>
+        <img src="https://placedog.net/200/200" alt="Screenshot of Example D" class="portfolioImages">
+        <p class="exampletext">A short sentence explaining aspects of this project. A short sentence explaining aspects
+            of this project. A short sentence explaining aspects of this project.</p>
+    </div>
+
+    <div id="contactbox" class="fboxbgcolors">
+        <h2 id="contacth">Contact Details:</h2>
+        <p>Email: jake_lewis12@hotmail.co.uk</p>
+    </div>
+
+    <div id="contactpicbox" class="fboxbgcolors">
+        <img src="images/bridge.jpg" alt="rickety bridge over rapids" id="bridgepic" class="contactpics">
+        <img src="images/tent.jpg" alt="green tent at sunrise" id="tentpic" class="contactpics">
+        <img src="images/spike.jpg" alt="spiked rock on beach" id="spikepic" class="contactpics">
+    </div>
+
+    <footer></footer>
+</body>
 </html>
