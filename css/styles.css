@@ -46,25 +46,27 @@ p {
 
 #mainimagegrid {
     width: 100vw;
-    height: auto;
     display: grid;
-    grid-template-rows: auto 3vw;
+    grid-template-rows: auto 10vw auto;
+    grid-template-columns: 1fr;
 }
 
 #mainpic {
     width: 100vw;
-    grid-row: 1/2;
+    grid-row: 1/3;
+    grid-column: 1;
 }
 
 #welcomebox {
     display: flex;
-    grid-row: 2/3;
-    flex-wrap: nowrap;
-    gap: 3vw;
-    font-size: 2vw;
+    grid-row: 2/4;
+    grid-column: 1;
     align-items: center;
     justify-self: center;
+    flex-wrap: nowrap;
+    gap: 3vw;
     padding: 1vw;
+    font-size: 2vw;
     font-family: 'Courgette', serif;
 }
 
@@ -91,6 +93,13 @@ p {
     text-decoration: underline;
 }
 
+#pfolioBoxesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
 #portfoliohead {
     font-size: 4.5vw;
     margin-top: 3vw;
@@ -106,7 +115,7 @@ p {
     line-height: 3.5vw;
 }
 
-.exampleboxes {
+.pfolioboxes {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
@@ -120,52 +129,21 @@ p {
     box-shadow: 0.5vw 0.6vw 1vw rgb(0 0 0 / 0.5);
 }
 
-.portfolioImages {
+.pfolioImages {
     width: 60vw;
 }
 
-#exampleabox {
-    grid-row: 6/7;
-}
-
-.exampleseparation {
-    grid-column: 3/19;
-    width: 100%;
-    justify-self: center;
+.boxSeparation {
+    width: 90%;
     margin: 2vw;
     height: 0.01vw;
     color: #9d069d;
     background-color: #9d069d;
 }
 
-#hr-ab {
-    grid-row: 7/8;
-}
-
-#examplebbox {
-    grid-row: 8/9;
-}
-
-#hr-bc {
-    grid-row: 9/10;
-}
-
-#examplecbox {
-    grid-row: 10/11;
-}
-
-#hr-cd {
-    grid-row: 11/12;
-}
-
-#exampledbox {
-    grid-row: 12/13;
-}
 
 #contactbox {
     display: flex;
-    grid-column: 1/21;
-    grid-row: 13/14;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 2vw;
@@ -185,8 +163,6 @@ p {
 
 #contactpicbox {
     display: flex;
-    grid-column: 1/21;
-    grid-row: 14/15;
     flex-direction: row;
     gap: 2vw;
     padding: 2vw;
@@ -206,8 +182,6 @@ p {
 }
 
 footer {
-    grid-column: 1/21;
-    grid-row: 15/16;
     background-color: rgba(241, 229, 255, 0.85);
     padding: 2vw;
 }
@@ -228,7 +202,6 @@ footer {
 
     #welcomebox {
         font-size: 2vw;
-        border: 0.5vw solid white;
         padding: 0.1vw;
     }
 
@@ -244,10 +217,6 @@ footer {
 
     .example-head {
         font-size: 2vw;
-    }
-
-    .exampleboxes {
-        border: 0.5vw dashed #4162c3;
     }
 
     #hr-ab {
