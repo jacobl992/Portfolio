@@ -63,6 +63,7 @@ p {
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: auto 10vw repeat(9, auto);
     background-color: #e9f0f7;
+    /*i want to rmeove this massive grid and just make flex boxes*/
 }
 
 #mainpic {
