@@ -44,20 +44,20 @@ p {
     margin: 0;
 }
 
-#mainimagegrid {
+#main-image-grid {
     width: 100vw;
     display: grid;
     grid-template-rows: auto 10vw auto;
     grid-template-columns: 1fr;
 }
 
-#mainpic {
+#main-pic {
     width: 100vw;
     grid-row: 1/3;
     grid-column: 1;
 }
 
-#welcomebox {
+#welcome-box {
     display: flex;
     grid-row: 2/4;
     grid-column: 1;
@@ -74,48 +74,51 @@ p {
     background-color: #bdd2e1;
 }
 
-#profilepic {
+#profile-pic {
     width: 12vw;
     height: auto;
     border: 0.2vw solid white;
     border-radius: 50%;
 }
 
-#welcometext {
+#welcome-text {
     line-height: 4vw;
     background-color: rgb(189,210,225,0.8);
     border-radius: 45%;
     padding: 1vw;
 }
 
-#welcomespan {
+#welcome-span {
     font-weight: bold;
     text-decoration: underline;
 }
 
-#pfolioBoxesContainer {
+#pfolio-headbox {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pfolio-headbox h2{
+    font-size: 4.5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#pfolio-boxes-container {
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
 }
 
-#portfoliohead {
-    font-size: 4.5vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-}
-
-.example-head {
+.pfolio-head {
     margin: 0;
     font-size: 3vw;
 }
 
-.exampletext {
-    line-height: 3.5vw;
-}
-
-.pfolioboxes {
+.pfolio-boxes {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
@@ -129,11 +132,15 @@ p {
     box-shadow: 0.5vw 0.6vw 1vw rgb(0 0 0 / 0.5);
 }
 
-.pfolioImages {
+.pfolio-images {
     width: 60vw;
 }
 
-.boxSeparation {
+.example-text {
+    line-height: 3.5vw;
+}
+
+.box-separation {
     width: 90%;
     margin: 2vw;
     height: 0.01vw;
@@ -141,8 +148,7 @@ p {
     background-color: #9d069d;
 }
 
-
-#contactbox {
+#contact-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -153,15 +159,15 @@ p {
     font-family: 'Bitter', serif;
 }
 
-#contactbox h2 {
+#contact-box h2 {
     padding: 1vw;
 }
 
-#contactbox p {
+#contact-box p {
     font-size: 3vw;
 }
 
-#contactpicbox {
+#contact-pic-box {
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -186,8 +192,8 @@ footer {
     padding: 2vw;
 }
 
-@media only screen and (min-width: 700px) {
-    .nodesktop {
+@media only screen and (min-width: 600px) {
+    .no-desktop-display {
         display: none;
     }
 
@@ -196,16 +202,12 @@ footer {
         font-weight: 500;
     }
 
-    #maingrid {
-        grid-template-rows: auto 4vw repeat(9, auto);
-    }
-
-    #welcomebox {
+    #welcome-box {
         font-size: 2vw;
         padding: 0.1vw;
     }
 
-    #profilepic {
+    #profile-pic {
         width: 11vw;
         height: auto;
         margin: 1vw;
@@ -215,54 +217,52 @@ footer {
         font-size: 3vw;
     }
 
-    .example-head {
+    #pfolio-boxes-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pfolio-boxes {
+        width: 40vw;
+        height: 80vw;
+        gap: 1vw;
+    }
+
+    .pfolio-head {
+        font-size: 2vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pfolio-images {
+        width: 35vw;
+    }
+
+    /*#hr-ab {*/
+    /*    grid-row: 8/9;*/
+    /*    height: 1px;*/
+    /*    border: 0;*/
+    /*}*/
+
+    /*.vertical-line {*/
+    /*    border-left: 1px solid #9d069d;*/
+    /*    grid-column: 10/12;*/
+    /*    grid-row: 6/10;*/
+    /*    height: 90%;*/
+    /*    margin-left: 5vw;*/
+    /*    align-self: center;*/
+    /*}*/
+
+    #contact-box h2 {
         font-size: 2vw;
     }
 
-    #hr-ab {
-        grid-row: 8/9;
-        height: 1px;
-        border: 0;
-    }
-
-    .vertical-line {
-        border-left: 1px solid #9d069d;
-        grid-column: 10/12;
-        grid-row: 6/10;
-        height: 90%;
-        margin-left: 5vw;
-        align-self: center;
-    }
-
-    #exampleabox {
-        grid-column: 2/11;
-        grid-row: 6/7;
-    }
-
-    #examplebbox {
-        grid-column: 11/20;
-        grid-row: 6/7;
-    }
-
-    #examplecbox {
-        grid-column: 2/11;
-        grid-row: 9/10;
-    }
-
-    #exampledbox {
-        grid-column: 11/20;
-        grid-row: 9/10;
-    }
-
-    #contactbox h2 {
+    #contact-box p {
         font-size: 2vw;
     }
 
-    #contactbox p {
-        font-size: 2vw;
-    }
-
-    #contactbox {
+    #contact-box {
         grid-row: 10/11;
         flex-direction: row;
         padding-left: 4vw;
@@ -270,7 +270,7 @@ footer {
         align-items: center;
     }
 
-    #contactpicbox {
+    #contact-pic-box {
         grid-row: 11/12;
         padding: 0vw;
         padding-left: 3vw;
