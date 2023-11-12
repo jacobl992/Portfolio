@@ -7,13 +7,13 @@
 body {
     font-family: 'Works Sans', verdana, sans-serif;
     font-size: 2vw;
+    background-color: #e9f0f7;
 }
 
-#menubox {
+#navbox {
     width: 100%;
-    display: grid;
-    grid-template-columns: 10vw auto 5vw auto 5vw auto 10vw;
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
     padding: 0.6vw;
     background-color: rgba(241, 229, 255, 0.85);
     position: fixed;
@@ -23,10 +23,10 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-	text-decoration: none;
+    text-decoration: none;
 }
 
-.menu-h {
+.nav-headers {
     font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
     font-weight: 550;
@@ -44,165 +44,148 @@ p {
     margin: 0;
 }
 
-#pflink {
-    grid-column: 2;
-}
-
-#abtmelink {
-    grid-column: 4;
-}
-
-#contactlink {
-    grid-column: 6;
-}
-
-#maingrid {
+#main-image-grid {
     width: 100vw;
-    height: auto;
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: auto 10vw repeat(9, auto);
-    background-color: #e9f0f7;
-    /*i want to rmeove this massive grid and just make flex boxes*/
+    grid-template-rows: auto 10vw auto;
+    grid-template-columns: 1fr;
 }
 
-#mainpic {
-    grid-column: 1/21;
+#main-pic {
+    width: 100vw;
     grid-row: 1/3;
+    grid-column: 1;
 }
 
-#welcomebox {
+#welcome-box {
     display: flex;
-    grid-column: 3/19;
     grid-row: 2/4;
+    grid-column: 1;
+    align-items: center;
+    justify-self: center;
     flex-wrap: nowrap;
     gap: 3vw;
-    font-size: 2vw;
-    align-items: center;
     padding: 1vw;
+    font-size: 2vw;
     font-family: 'Courgette', serif;
+    /*slight pulsing animation on this*/
 }
 
 .fboxbgcolors {
     background-color: #bdd2e1;
 }
 
-#profilepic {
+#profile-pic {
     width: 12vw;
     height: auto;
     border: 0.2vw solid white;
     border-radius: 50%;
 }
 
-#welcometext {
+#welcome-text {
     line-height: 4vw;
-    background-color: rgb(189,210,225,0.8);
+    background-color: rgb(189, 210, 225, 0.8);
     border-radius: 45%;
     padding: 1vw;
 }
 
-#welcomespan {
+#welcome-span {
     font-weight: bold;
     text-decoration: underline;
 }
 
-#porthead {
-    grid-column: 2/19;
-    grid-row: 5/5;
-    font-size: 4.5vw;
-    justify-self: center;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-}
-
-.example-head {
-    margin: 0;
-    font-size: 3vw;
-}
-
-.exampletext {
-    line-height: 3.5vw;
-}
-
-.exampleboxes {
+#pfolio-headbox {
+    width: 100vw;
     display: flex;
-    grid-column: 4/18;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 2vw;
-    padding: 2vw;
+    font-size: 2.5vw;
+    font-family: 'nunito sans' ,verdana, sans-serif;
+    color: rgb(65,7,157);
+    margin-top: 2.5vw;
+    margin-bottom: 1.5vw;
+}
+
+#pfolio-headbox h2 {
+    margin: 0;
+}
+
+#pfolio-boxes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.pfolio-boxes {
+    width: 70vw;
+    text-align: center;
     background-color: rgb(255, 255, 255);
-    margin: 3vw;
     box-shadow: 0.5vw 0.6vw 1vw rgb(0 0 0 / 0.5);
+    margin: 2vw 0;
+    padding: 1vw 0;
 }
 
-.portfolioImages {
+.pfolio-head {
+    font-size: 3vw;
+    margin: 0;
+    padding: 3vw;
+}
+
+.pfolio-images {
     width: 60vw;
+    margin-bottom: 1vw;
 }
 
-#exampleabox {
-    grid-row: 6/7;
+.img-borders {
+    border: solid 1px rgb(206, 206, 206)
 }
 
-.exampleseparation {
-    grid-column: 3/19;
-    width: 100%;
-    justify-self: center;
+.pfolio-text {
+    line-height: 3vw;
+    padding: 0 2vw;
+    text-align: left;
+}
+
+.git-icon-p {
+    padding-right: 2vw;
+    /*text-align: right;*/
+    text-align: end;
+}
+
+.fa-github {
+    padding: 0.5vw;
+    border: dashed 2px gold;
+}
+
+.box-separation {
+    width: 90%;
     margin: 2vw;
     height: 0.01vw;
     color: #9d069d;
     background-color: #9d069d;
 }
 
-#hr-ab {
-    grid-row: 7/8;
-}
-
-#examplebbox {
-    grid-row: 8/9;
-}
-
-#hr-bc {
-    grid-row: 9/10;
-}
-
-#examplecbox {
-    grid-row: 10/11;
-}
-
-#hr-cd {
-    grid-row: 11/12;
-}
-
-#exampledbox {
-    grid-row: 12/13;
-}
-
-#contactbox {
-    display: flex;
-    grid-column: 1/21;
-    grid-row: 13/14;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 2vw;
+#contact-box {
     margin-top: 4vw;
-    padding-left: 2vw;
+    padding: 2vw 0;
+    padding-bottom: 2vw;
     border-top: 1.5vw solid #4162c3;
-    font-family: 'Bitter', serif;
+    font-family: 'nunito sans' ,verdana, sans-serif;
+    line-height: 4vw;
 }
 
-#contactbox h2 {
-    padding: 1vw;
+#contact-box h2 {
+    font-weight: bold;
+    margin: 0;
 }
 
-#contactbox p {
+#contact-box p {
     font-size: 3vw;
 }
 
-#contactpicbox {
+#contact-pic-box {
     display: flex;
-    grid-column: 1/21;
-    grid-row: 14/15;
     flex-direction: row;
     gap: 2vw;
     padding: 2vw;
@@ -222,94 +205,80 @@ p {
 }
 
 footer {
-    grid-column: 1/21;
-    grid-row: 15/16;
     background-color: rgba(241, 229, 255, 0.85);
     padding: 2vw;
 }
 
-@media only screen and (min-width: 700px) {
-    .nodesktop {
+@media only screen and (min-width: 600px) {
+    .no-desktop-display {
         display: none;
     }
 
-    .menu-h {
+    .nav-headers {
         font-size: 2vw;
         font-weight: 500;
     }
 
-    #maingrid {
-        grid-template-rows: auto 4vw repeat(9, auto);
-    }
-
-    #welcomebox {
+    #welcome-box {
         font-size: 2vw;
-        border: 0.5vw solid white;
         padding: 0.1vw;
     }
 
-    #profilepic {
+    #profile-pic {
         width: 11vw;
         height: auto;
         margin: 1vw;
     }
 
-    #porthead {
-        font-size: 3vw;
+    #pfolio-headbox {
+        margin-bottom: 0;
     }
 
-    .example-head {
+    #pfolio-boxes-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pfolio-boxes {
+        width: 40vw;
+        height: 55vw;
+        font-size: 1.5vw;
+    }
+
+    .pfolio-head {
         font-size: 2vw;
+        padding: 1vw;
     }
 
-    .exampleboxes {
-        border: 0.5vw dashed #4162c3;
+    .pfolio-images {
+        width: 32vw;
     }
 
-    #hr-ab {
-        grid-row: 8/9;
-        height: 1px;
-        border: 0;
+    .pfolio-text {
+        line-height: 2.5vw;
+    }
+
+    #boneyard {
+        width: 28vw;
     }
 
     .vertical-line {
         border-left: 1px solid #9d069d;
-        grid-column: 10/12;
-        grid-row: 6/10;
         height: 90%;
         margin-left: 5vw;
         align-self: center;
     }
 
-    #exampleabox {
-        grid-column: 2/11;
-        grid-row: 6/7;
-    }
-
-    #examplebbox {
-        grid-column: 11/20;
-        grid-row: 6/7;
-    }
-
-    #examplecbox {
-        grid-column: 2/11;
-        grid-row: 9/10;
-    }
-
-    #exampledbox {
-        grid-column: 11/20;
-        grid-row: 9/10;
-    }
-
-    #contactbox h2 {
+    #contact-box h2 {
         font-size: 2vw;
     }
 
-    #contactbox p {
+    #contact-box p {
         font-size: 2vw;
     }
 
-    #contactbox {
+    #contact-box {
         grid-row: 10/11;
         flex-direction: row;
         padding-left: 4vw;
@@ -317,7 +286,7 @@ footer {
         align-items: center;
     }
 
-    #contactpicbox {
+    #contact-pic-box {
         grid-row: 11/12;
         padding: 0vw;
         padding-left: 3vw;
@@ -333,7 +302,7 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-    .nomobile {
+    .no-mobile-display {
         display: none;
     }
 }
