@@ -68,6 +68,7 @@ p {
     padding: 1vw;
     font-size: 2vw;
     font-family: 'Courgette', serif;
+    /*slight pulsing animation on this*/
 }
 
 .fboxbgcolors {
@@ -136,8 +137,12 @@ p {
     margin-bottom: 1vw;
 }
 
+.img-borders {
+    border: solid 1px rgb(206, 206, 206)
+}
+
 .pfolio-text {
-    line-height: 2.5vw;
+    line-height: 3vw;
     padding: 0 2vw;
     text-align: left;
 }
@@ -162,18 +167,17 @@ p {
 }
 
 #contact-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 2vw;
     margin-top: 4vw;
-    padding-left: 2vw;
+    padding: 2vw 0;
+    padding-bottom: 2vw;
     border-top: 1.5vw solid #4162c3;
-    font-family: 'Bitter', serif;
+    font-family: 'nunito sans' ,verdana, sans-serif;
+    line-height: 4vw;
 }
 
 #contact-box h2 {
-    padding: 1vw;
+    font-weight: bold;
+    margin: 0;
 }
 
 #contact-box p {
@@ -240,7 +244,6 @@ footer {
         width: 40vw;
         height: 55vw;
         font-size: 1.5vw;
-        /*margin: 4vw 0;*/
     }
 
     .pfolio-head {
@@ -252,15 +255,13 @@ footer {
         width: 32vw;
     }
 
+    .pfolio-text {
+        line-height: 2.5vw;
+    }
+
     #boneyard {
         width: 28vw;
     }
-
-    /*#hr-ab {*/
-    /*    grid-row: 8/9;*/
-    /*    height: 1px;*/
-    /*    border: 0;*/
-    /*}*/
 
     .vertical-line {
         border-left: 1px solid #9d069d;
