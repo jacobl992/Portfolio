@@ -27,7 +27,7 @@ a:active {
 	text-decoration: none;
 }
 
-.menu-h {
+.nav-headers {
     font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
     font-weight: 400;
@@ -165,7 +165,7 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
-    .menu-h {
+    .nav-headers {
         font-size: 2vw;
     }
 }

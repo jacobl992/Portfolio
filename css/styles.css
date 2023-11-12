@@ -23,10 +23,10 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-	text-decoration: none;
+    text-decoration: none;
 }
 
-.menu-h {
+.nav-headers {
     font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
     font-weight: 550;
@@ -83,7 +83,7 @@ p {
 
 #welcome-text {
     line-height: 4vw;
-    background-color: rgb(189,210,225,0.8);
+    background-color: rgb(189, 210, 225, 0.8);
     border-radius: 45%;
     padding: 1vw;
 }
@@ -98,12 +98,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2.5vw;
+    font-family: 'nunito sans' ,verdana, sans-serif;
+    color: rgb(65,7,157);
+    margin-top: 2.5vw;
+    margin-bottom: 1.5vw;
 }
 
-#pfolio-headbox h2{
-    font-size: 4.5vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+#pfolio-headbox h2 {
+    margin: 0;
 }
 
 #pfolio-boxes-container {
@@ -113,31 +116,41 @@ p {
     align-items: center;
 }
 
-.pfolio-head {
-    margin: 0;
-    font-size: 3vw;
-}
-
 .pfolio-boxes {
     width: 70vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-self: center;
-    align-self: center;
-    gap: 2vw;
-    padding: 2vw;
+    text-align: center;
     background-color: rgb(255, 255, 255);
-    margin: 3vw;
     box-shadow: 0.5vw 0.6vw 1vw rgb(0 0 0 / 0.5);
+    margin: 2vw 0;
+    padding: 1vw 0;
+}
+
+.pfolio-head {
+    font-size: 3vw;
+    margin: 0;
+    padding: 3vw;
 }
 
 .pfolio-images {
     width: 60vw;
+    margin-bottom: 1vw;
 }
 
-.example-text {
-    line-height: 3.5vw;
+.pfolio-text {
+    line-height: 2.5vw;
+    padding: 0 2vw;
+    text-align: left;
+}
+
+.git-icon-p {
+    padding-right: 2vw;
+    /*text-align: right;*/
+    text-align: end;
+}
+
+.fa-github {
+    padding: 0.5vw;
+    border: dashed 2px gold;
 }
 
 .box-separation {
@@ -197,7 +210,7 @@ footer {
         display: none;
     }
 
-    .menu-h {
+    .nav-headers {
         font-size: 2vw;
         font-weight: 500;
     }
@@ -213,30 +226,34 @@ footer {
         margin: 1vw;
     }
 
-    #porthead {
-        font-size: 3vw;
+    #pfolio-headbox {
+        margin-bottom: 0;
     }
 
     #pfolio-boxes-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .pfolio-boxes {
         width: 40vw;
-        height: 80vw;
-        gap: 1vw;
+        height: 55vw;
+        font-size: 1.5vw;
+        /*margin: 4vw 0;*/
     }
 
     .pfolio-head {
         font-size: 2vw;
-        margin: 0;
-        padding: 0;
+        padding: 1vw;
     }
 
     .pfolio-images {
-        width: 35vw;
+        width: 32vw;
+    }
+
+    #boneyard {
+        width: 28vw;
     }
 
     /*#hr-ab {*/
@@ -245,14 +262,12 @@ footer {
     /*    border: 0;*/
     /*}*/
 
-    /*.vertical-line {*/
-    /*    border-left: 1px solid #9d069d;*/
-    /*    grid-column: 10/12;*/
-    /*    grid-row: 6/10;*/
-    /*    height: 90%;*/
-    /*    margin-left: 5vw;*/
-    /*    align-self: center;*/
-    /*}*/
+    .vertical-line {
+        border-left: 1px solid #9d069d;
+        height: 90%;
+        margin-left: 5vw;
+        align-self: center;
+    }
 
     #contact-box h2 {
         font-size: 2vw;
@@ -286,7 +301,7 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-    .nomobile {
+    .no-mobile-display {
         display: none;
     }
 }

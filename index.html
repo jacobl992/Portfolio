@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Courgette&family=Work+Sans&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta name="description" content="Portfolio">
     <meta name="author" content="Jake Lewis">
     <link rel="stylesheet" href="css/normalize.css">
@@ -22,13 +26,13 @@
 
 <nav id="navbox">
     <div id="pflink">
-        <a href="#porthead" class="menu-h">Portfolio</a>
+        <a href="#pfolio-headbox" class="nav-headers">Portfolio</a>
     </div>
     <div id="abtmelink">
-        <a href="./aboutme.html" class="menu-h">About Me</a>
+        <a href="./aboutme.html" class="nav-headers">About Me</a>
     </div>
     <div id="contactlink">
-        <a href="#contacth" class="menu-h">Contact Details</a>
+        <a href="#contacth" class="nav-headers">Contact Details</a>
     </div>
 </nav>
 
@@ -52,28 +56,35 @@
         <h3 class=pfolio-head>PHP intro - <a
                 href="https://2023-jakel.dev.io-academy.uk/collectorapp/index.php">Cake Collection</a></h3>
         <img src="images/cakecollector.jpg" alt="Screenshot of cake collecition website" class="pfolio-images">
-        <p class="example-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
+        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
             of this project. A short sentence explaining aspects of this project.</p>
+        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
     </div>
 
     <hr class="box-separation no-desktop-display">
 
     <div id="examplebbox" class="pfolio-boxes">
-        <h3 class=pfolio-head>Javascript game</h3>
-        <img src="images/boneyard.jpg" alt="Screenshot of javascript match pairs game" class="pfolio-images">
-        <p class="example-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
+        <h3 class=pfolio-head href="https://dev.io-academy.uk/projects/2023-aug/23-aug-pairs/game.html"><a
+                href="https://dev.io-academy.uk/projects/2023-aug/23-aug-pairs/game.html">Javascript game</a></h3>
+        <img src="images/boneyard.jpg" alt="Screenshot of javascript match pairs game" class="pfolio-images"
+             id="boneyard">
+        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
             of this project. A short sentence explaining aspects of this project.</p>
+        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
     </div>
 
     <hr class="box-separation no-desktop-display">
 
-<!--    <div class="nomobile vertical-line"></div>-->
+    <hr class="box-separation no-mobile-display">
+
+<!--    <vr class="nomobile vertical-line">-->
 
     <div id="examplecbox" class="pfolio-boxes">
         <h3 class=pfolio-head>Example C</h3>
         <img src="https://placedog.net/200/200" alt="Screenshot of Example C" class="pfolio-images">
-        <p class="example-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
+        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
             of this project. A short sentence explaining aspects of this project.</p>
+        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
     </div>
 
     <hr class="box-separation no-desktop-display">
@@ -81,8 +92,9 @@
     <div id="exampledbox" class="pfolio-boxes">
         <h3 class=pfolio-head>Example D</h3>
         <img src="https://placedog.net/200/200" alt="Screenshot of Example D" class="pfolio-images">
-        <p class="example-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
+        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
             of this project. A short sentence explaining aspects of this project.</p>
+        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
     </div>
 </div>
 
