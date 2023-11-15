@@ -26,6 +26,23 @@ a:active {
     text-decoration: none;
 }
 
+.coloured-links,
+.coloured-links:link,
+.coloured-links:visited,
+.coloured-links:hover,
+.coloured-links:active {
+    color: rgb(2, 105, 99);
+    text-decoration: underline;
+}
+
+/*a {*/
+/*    color: inherit;*/
+/*}*/
+
+/*.coloured-links {*/
+/*    color: rgb(65,7,157);*/
+/*}*/
+
 .nav-headers {
     font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
@@ -126,7 +143,7 @@ p {
     padding: 1vw 0;
 }
 
-.pfolio-head {
+.pfolio-titles {
     font-size: 3vw;
     margin: 0;
     padding: 3vw;
@@ -168,7 +185,7 @@ p {
 
 #contact-box {
     margin-top: 4vw;
-    padding: 2vw 0;
+    padding: 2vw 2vw;
     padding-bottom: 2vw;
     border-top: 1.5vw solid #4162c3;
     font-family: 'nunito sans' ,verdana, sans-serif;
@@ -181,27 +198,8 @@ p {
 }
 
 #contact-box p {
-    font-size: 3vw;
-}
-
-#contact-pic-box {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    padding: 2vw;
-    justify-content: space-around;
-}
-
-#bridgepic {
-    width: 20vw;
-}
-
-#tentpic {
-    width: 34vw;
-}
-
-#spikepic {
-    width: 20vw;
+    font-size: 2.5vw;
+    padding-left: 2vw;
 }
 
 footer {
@@ -241,26 +239,22 @@ footer {
     }
 
     .pfolio-boxes {
-        width: 40vw;
-        height: 55vw;
-        font-size: 1.5vw;
+        width: 26vw;
+        height: 40vw;
+        font-size: 1.2vw;
     }
 
-    .pfolio-head {
-        font-size: 2vw;
+    .pfolio-titles {
+        font-size: 1.5vw;
         padding: 1vw;
     }
 
     .pfolio-images {
-        width: 32vw;
+        width: 22vw;
     }
 
     .pfolio-text {
-        line-height: 2.5vw;
-    }
-
-    #boneyard {
-        width: 28vw;
+        line-height: 1.6vw;
     }
 
     .vertical-line {
@@ -277,31 +271,9 @@ footer {
     #contact-box p {
         font-size: 2vw;
     }
-
-    #contact-box {
-        grid-row: 10/11;
-        flex-direction: row;
-        padding-left: 4vw;
-        border-top: 0.8vw solid #4162c3;
-        align-items: center;
-    }
-
-    #contact-pic-box {
-        grid-row: 11/12;
-        padding: 0vw;
-        padding-left: 3vw;
-        padding-right: 2vw;
-        padding-bottom: 2vw;
-        justify-content: space-evenly;
-    }
-
-    .contactpics {
-        width: 16vw;
-        height: auto;
-    }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .no-mobile-display {
         display: none;
     }
