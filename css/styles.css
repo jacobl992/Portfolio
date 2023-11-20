@@ -92,6 +92,18 @@ p {
     background-color: #bdd2e1;
 }
 
+@keyframes expandContract {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 #profile-pic {
     width: 12vw;
     height: auto;
@@ -104,6 +116,7 @@ p {
     background-color: rgb(189, 210, 225, 0.8);
     border-radius: 45%;
     padding: 1vw;
+    animation: expandContract 2s ease-in-out 3;
 }
 
 #welcome-span {
