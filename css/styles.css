@@ -196,6 +196,85 @@ p {
     background-color: #9d069d;
 }
 
+.modal-list {
+    cursor: pointer;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#coursesModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#lockModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#addModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#deleteModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.portal-imgs {
+    width: 50vw;
+    height: auto;
+}
+
+.mod-boxes {
+    display: flex;
+    width: 70vw;
+}
+
 #contact-box {
     margin-top: 4vw;
     padding: 2vw 2vw;
@@ -268,6 +347,13 @@ footer {
 
     .pfolio-text {
         line-height: 1.6vw;
+    }
+
+    .portal-modals-box {
+        display: grid;
+        width: 22vw;
+        height: 16vw;
+        margin: 2vw;
     }
 
     .vertical-line {
