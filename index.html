@@ -19,7 +19,7 @@
     <link rel="icon" href="images/tabicon.png" sizes="192x192">
     <link rel="shortcut icon" href="images/tabicon.png">
     <link rel="apple-touch-icon" href="images/tabicon.png">
-    <!-- <script defer src="js/index.js"></script> -->
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -41,8 +41,8 @@
     <img src="images/bluedeltaonly.jpg" alt="glacial river delta" id="main-pic">
     <div id="welcome-box">
         <img src="images/portprof.png" alt="headshot of Jake" id="profile-pic">
-        <p id="welcome-text">A short sentence welcoming you to my portfolio page. <span
-                id="welcome-span">Enjoy it!</span>
+        <p id="welcome-text">My name's Jake and I'm a <span
+                id="welcome-span">full-stack developer</span>. Welcome to my portfolio.
         </p>
     </div>
 </div>
@@ -52,69 +52,134 @@
 </div>
 
 <div id="pfolio-boxes-container">
+    <!--    --------iO Academy Projects---------- -->
+
+    <!--    1. -->
     <div class="pfolio-boxes">
-        <h3 class=pfolio-titles><a
-                href="https://2023-jakel.dev.io-academy.uk/collectorapp/index.php" class="coloured-links">Cake Collection</a> - PHP Intro</h3>
-        <img src="images/cakecollector.jpg" alt="Screenshot of cake collecition website" class="pfolio-images">
-        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
-            of this project. A short sentence explaining aspects of this project.</p>
-        <p class="git-icon-p"><a href="https://github.com/jacobl992/collectorapp"><i class="fa-brands fa-github"></i></a></p>
+        <h3 class=pfolio-titles>Academy Portal Updates - Legacy Code</h3>
+        <img src="images/academylogin.png" alt="Screenshot of Example D" class="pfolio-images img-borders">
+        <p class="pfolio-text">A full-stack project to improve and debug the iO Academy Portal, a large monolith using
+            OO PHP and Slim, with an MVC architecture and autowiring, and Bootstrap on the frontend.
+            I worked on creating data tables in the MySQL db, dynamically populating outputs, unit tests and creating
+            forms to interact with the db. </p>
+        <div class="overlay" id="overlay"></div>
+        <div class="modals-container">
+            <ul>
+                <li id="open-courses-modal" class="modal-list">< Courses ></li>
+                <li id="open-lock-modal" class="modal-list">< Lock student profile ></li>
+                <li id="open-addcat-modal" class="modal-list">< Add category ></li>
+                <li id="open-delcat-modal" class="modal-list">< Delete category ></li>
+            </ul>
+            <div class="modal" id="coursesModal">
+                <div class="mod-boxes">
+                    <img src="images/courses.png" alt="a table of courses" class="portal-imgs img-borders">
+                </div>
+            </div>
+            <div class="modal" id="lockModal">
+                <div class="mod-boxes">
+                    <div>
+                        <img src="images/editpage.png" alt="edit functionality on a profile page"
+                             class="portal-imgs img-borders">
+                        <img src="images/lockedtooltip.png" alt="tooltip for locked option"
+                             class="portal-imgs img-borders">
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="addModal">
+                <div class="mod-boxes">
+                    <img src="images/addcategory.png" alt="a form to add a category" class="portal-imgs img-borders">
+                </div>
+            </div>
+            <div class="modal" id="deleteModal">
+                <div class="mod-boxes">
+                    <img src="images/deletecategory.png" alt="a table of courses that can be deleted"
+                         class="portal-imgs img-borders">
+                </div>
+            </div>
+        </div>
+        <div class="git-icons-box">
+            <p class="git-icon-p">Main: <a href="https://github.com/iO-Academy/AcademyPortal"><i
+                    class="fa-brands fa-github"></i></a></p>
+            <p class="git-icon-p">Pull request: <a href="https://github.com/iO-Academy/AcademyPortal/pull/568"><i
+                    class="fa-brands fa-github"></i></a></p>
+        </div>
     </div>
-<!--    links should automatically open in new tab not replace current session-->
+
+    <!--    links should automatically open in new tab not replace current session-->
 
     <hr class="box-separation no-desktop-display">
 
-    <!-- need to add github repo link to the rest -->
+    <!--2.-->
     <div class="pfolio-boxes">
-        <h3 class=pfolio-titles><a
-                href="https://dev.io-academy.uk/projects/2023-aug/23-aug-pairs/game.html" class="coloured-links">Brainworms' Boneyard</a> - JS game</h3>
-        <img src="images/boneyard.jpeg" alt="Screenshot of javascript match pairs game" class="pfolio-images"
-             id="boneyard">
-        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
-            of this project. A short sentence explaining aspects of this project.</p>
-        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
-    </div>
-
-    <hr class="box-separation no-desktop-display">
-
-    <div class="pfolio-boxes">
-        <h3 class=pfolio-titles><a href="https://23-aug-invoicing.dev.io-academy.uk/" class="coloured-links">Invoicing App</a> - React</h3>
+        <h3 class=pfolio-titles><a href="https://23-aug-invoicing.dev.io-academy.uk/" class="coloured-links">Invoicing
+            App</a> - React</h3>
         <img src="images/invoicing-app.png" alt="Screenshot of Example C" class="pfolio-images img-borders">
-        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
-            of this project. A short sentence explaining aspects of this project.</p>
-        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
+        <p class="pfolio-text">Over a three and a half day sprint I was part of a team that developed the front-end for
+            an invoicing app.
+            We used JavaScript, React, Vite and Bootstrap to build an interface for an API.
+            We matched the product owner specifications, fully fulfilling the brief and completing all stories on time.
+            Within the project I focussed on the components for dispaying all invoices and intergrating with the
+            API. </p>
+        <p class="git-icon-p"><a href="https://github.com/iO-Academy/23-aug-invoicing"><i
+                class="fa-brands fa-github"></i></a></p>
     </div>
 
     <hr class="box-separation no-desktop-display">
-
     <hr class="box-separation no-mobile-display">
 
-
+    <!--    3.-->
     <div class="pfolio-boxes">
-        <h3 class=pfolio-titles><a href="https://furniture-store.dev.io-academy.uk/" class="coloured-links">Furniture store</a> - PHP backend API</h3>
+        <h3 class=pfolio-titles><a href="https://furniture-store.dev.io-academy.uk/" class="coloured-links">Furniture
+            store</a> - PHP backend API</h3>
         <img src="images/furniture-api.png" alt="Screenshot of Example D" class="pfolio-images img-borders">
-        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
-            of this project. A short sentence explaining aspects of this project.</p>
-        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
+        <p class="pfolio-text">I scrum mastered a team of five as we developed an API in PHP to respond to a
+            pre-existing front-end.
+            The process involved creating an app architecture for OOP classes, using factories, hydrators, entities,
+            services and unit tests to fulfill all stories in the brief and complete additional goals well within the
+            sprint. </p>
+        <p class="git-icon-p"><a href="https://github.com/iO-Academy/23-aug-furniture-store-API"><i
+                class="fa-brands fa-github"></i></a></p>
     </div>
 
     <hr class="box-separation no-desktop-display">
 
+    <!--4.-->
     <div class="pfolio-boxes">
-        <h3 class=pfolio-titles>Project X</h3>
-        <img src="https://placedog.net/200/200" alt="Screenshot of Example D" class="pfolio-images">
-        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
-            of this project. A short sentence explaining aspects of this project.</p>
-        <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
+        <h3 class=pfolio-titles><a
+                href="https://dev.io-academy.uk/projects/2023-aug/23-aug-pairs/game.html" class="coloured-links">Brainworms'
+            Boneyard</a> - JS game</h3>
+        <img src="images/boneyard.jpeg" alt="Screenshot of javascript match pairs game" class="pfolio-images"
+             id="boneyard">
+        <p class="pfolio-text">A matching pairs game themed around Halloween as it coincided with the end of the sprint.
+            A team project developed using JavaScript, we completed all stories and took on additional work.
+            Specifically within the project I worked on game logic, turn counter logic and sounds. </p>
+        <p class="git-icon-p"><a href="https://github.com/iO-Academy/23-aug-pairs"><i
+                class="fa-brands fa-github"></i></a></p>
+    </div>
+
+    <hr class="box-separation no-desktop-display">
+    <hr class="box-separation no-mobile-display">
+
+    <!--    5.-->
+    <div class="pfolio-boxes">
+        <h3 class=pfolio-titles><a
+                href="https://2023-jakel.dev.io-academy.uk/collectorapp/index.php" class="coloured-links">Cake
+            Collection</a> - PHP Intro</h3>
+        <img src="images/cakecollector.jpg" alt="Screenshot of cake collecition website" class="pfolio-images">
+        <p class="pfolio-text">My first PHP project, a full-stack app featuring a collection of puddings, pictured,
+            reviewed and sourced, with the ability to add or delete pudding to the database. </p>
+        <p class="git-icon-p"><a href="https://github.com/jacobl992/collectorapp"><i
+                class="fa-brands fa-github"></i></a></p>
     </div>
 
     <hr class="box-separation no-desktop-display">
 
+    <!--    6.-->
     <div class="pfolio-boxes">
         <h3 class=pfolio-titles>Project X</h3>
         <img src="https://placedog.net/200/200" alt="Screenshot of Example D" class="pfolio-images">
-        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining aspects
-            of this project. A short sentence explaining aspects of this project.</p>
+        <p class="pfolio-text">A short sentence explaining aspects of this project. A short sentence explaining more aspects
+            of this project. A short sentence explaining even more aspects of this project.</p>
         <p class="git-icon-p"><i class="fa-brands fa-github"></i></p>
     </div>
 
@@ -125,9 +190,8 @@
 <div id="contact-box" class="fboxbgcolors">
     <h2 id="contacth">Contact Details</h2>
     <p>Email: <a href="mailto:jakelewis.crr@yahoo.com" class="coloured-links">jakelewis.crr@yahoo.com</a></p>
-    <p>LinkedIn: <a href="www.linkedin.com/in/jake-lewis-3b6164168" class="coloured-links">My Profile</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jake-lewis-3b6164168" class="coloured-links">My Profile</a></p>
     <p>GitHub: <a href="https://github.com/jacobl992" class="coloured-links">My Page</a></p>
-<!--    maybe just a background image to the whole thing rather than 3 pics-->
 </div>
 
 <footer></footer>

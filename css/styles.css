@@ -84,7 +84,7 @@ p {
     gap: 3vw;
     padding: 1vw;
     font-size: 2vw;
-    font-family: 'Courgette', serif;
+    font-family: 'Works Sans', 'nunito sans', serif;
     /*slight pulsing animation on this*/
 }
 
@@ -181,6 +181,7 @@ p {
     padding-right: 2vw;
     /*text-align: right;*/
     text-align: end;
+    margin: 1vw 0;
 }
 
 .fa-github {
@@ -194,6 +195,88 @@ p {
     height: 0.01vw;
     color: #9d069d;
     background-color: #9d069d;
+}
+
+.modal-list {
+    cursor: pointer;
+    list-style-type: none;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    color: rgb(2, 105, 99);
+    text-decoration: underline;
+}
+
+#coursesModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#lockModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#addModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#deleteModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.portal-imgs {
+    width: 70vw;
+    height: auto;
+}
+
+.mod-boxes {
+    display: flex;
+    width: 70vw;
 }
 
 #contact-box {
@@ -242,7 +325,12 @@ footer {
     }
 
     #pfolio-headbox {
-        margin-bottom: 0;
+        margin-bottom: 2vw;
+    }
+
+    #pfolio-headbox h2 {
+        padding-bottom: 1vw;
+        border-bottom: 1px solid rgb(65,7,157);
     }
 
     #pfolio-boxes-container {
@@ -252,9 +340,11 @@ footer {
     }
 
     .pfolio-boxes {
-        width: 26vw;
-        height: 40vw;
+        width: 40vw;
+        height: 61vw;
         font-size: 1.2vw;
+        box-shadow: none;
+
     }
 
     .pfolio-titles {
@@ -263,11 +353,24 @@ footer {
     }
 
     .pfolio-images {
-        width: 22vw;
+        width: 38vw;
     }
 
     .pfolio-text {
         line-height: 1.6vw;
+    }
+
+    .git-icons-box {
+        display: flex;
+        width: 40vw;
+        justify-content: space-around;
+    }
+
+    .portal-modals-box {
+        display: grid;
+        width: 22vw;
+        height: 16vw;
+        margin: 2vw;
     }
 
     .vertical-line {
