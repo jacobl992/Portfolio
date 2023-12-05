@@ -84,7 +84,7 @@ p {
     gap: 3vw;
     padding: 1vw;
     font-size: 2vw;
-    font-family: 'Courgette', serif;
+    font-family: 'Works Sans', 'nunito sans', serif;
     /*slight pulsing animation on this*/
 }
 
@@ -181,6 +181,7 @@ p {
     padding-right: 2vw;
     /*text-align: right;*/
     text-align: end;
+    margin: 1vw 0;
 }
 
 .fa-github {
@@ -200,6 +201,9 @@ p {
     cursor: pointer;
     list-style-type: none;
     font-weight: bold;
+    margin-bottom: 1vw;
+    color: rgb(2, 105, 99);
+    text-decoration: underline;
 }
 
 #coursesModal {
@@ -266,7 +270,7 @@ p {
 }
 
 .portal-imgs {
-    width: 50vw;
+    width: 70vw;
     height: auto;
 }
 
@@ -321,7 +325,12 @@ footer {
     }
 
     #pfolio-headbox {
-        margin-bottom: 0;
+        margin-bottom: 2vw;
+    }
+
+    #pfolio-headbox h2 {
+        padding-bottom: 1vw;
+        border-bottom: 1px solid rgb(65,7,157);
     }
 
     #pfolio-boxes-container {
@@ -331,9 +340,11 @@ footer {
     }
 
     .pfolio-boxes {
-        width: 26vw;
-        height: 40vw;
+        width: 40vw;
+        height: 61vw;
         font-size: 1.2vw;
+        box-shadow: none;
+
     }
 
     .pfolio-titles {
@@ -342,11 +353,17 @@ footer {
     }
 
     .pfolio-images {
-        width: 22vw;
+        width: 38vw;
     }
 
     .pfolio-text {
         line-height: 1.6vw;
+    }
+
+    .git-icons-box {
+        display: flex;
+        width: 40vw;
+        justify-content: space-around;
     }
 
     .portal-modals-box {
