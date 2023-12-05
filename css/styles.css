@@ -84,7 +84,7 @@ p {
     gap: 3vw;
     padding: 1vw;
     font-size: 2vw;
-    font-family: 'Works Sans', 'nunito sans', serif;
+    font-family: 'Works Sans', 'nunito sans', sans-serif;
     /*slight pulsing animation on this*/
 }
 
@@ -116,12 +116,16 @@ p {
     background-color: rgb(189, 210, 225, 0.8);
     border-radius: 45%;
     padding: 1vw;
-    animation: expandContract 2s ease-in-out 3;
+    animation: expandContract 2s ease-in-out 2;
 }
 
 #welcome-span {
     font-weight: bold;
     text-decoration: underline;
+}
+
+#serif-span {
+    font-family: 'courgette', serif;
 }
 
 #pfolio-headbox {
