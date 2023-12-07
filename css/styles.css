@@ -7,7 +7,7 @@
 body {
     font-family: 'Works Sans', verdana, sans-serif;
     font-size: 2vw;
-    background-color: #e9f0f7;
+    background-color: #000000;
 }
 
 #navbox {
@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 0.6vw;
-    background-color: rgba(241, 229, 255, 0.85);
+    background-color: rgba(3, 121, 157, 0.85);
     position: fixed;
 }
 
@@ -35,19 +35,11 @@ a:active {
     text-decoration: underline;
 }
 
-/*a {*/
-/*    color: inherit;*/
-/*}*/
-
-/*.coloured-links {*/
-/*    color: rgb(65,7,157);*/
-/*}*/
-
 .nav-headers {
     font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
     font-weight: 550;
-    color: #2a41a6;
+    color: rgb(184 237 236);
     padding: 0vw;
     margin: 0;
 }
@@ -85,7 +77,6 @@ p {
     padding: 1vw;
     font-size: 2vw;
     font-family: 'Works Sans', 'nunito sans', sans-serif;
-    /*slight pulsing animation on this*/
 }
 
 .fboxbgcolors {
@@ -113,7 +104,8 @@ p {
 
 #welcome-text {
     line-height: 4vw;
-    background-color: rgb(189, 210, 225, 0.8);
+    color: rgb(184 237 236);
+    /* background-color: rgb(189, 210, 225, 0.8); */
     border-radius: 45%;
     padding: 1vw;
     animation: expandContract 2s ease-in-out 2;
@@ -135,7 +127,7 @@ p {
     justify-content: center;
     font-size: 2.5vw;
     font-family: 'nunito sans' ,verdana, sans-serif;
-    color: rgb(65,7,157);
+    color: rgb(184 237 236);
     margin-top: 2.5vw;
     margin-bottom: 1.5vw;
 }
@@ -181,24 +173,30 @@ p {
     text-align: left;
 }
 
+.git-icons-box {
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;
+}
+
 .git-icon-p {
     padding-right: 2vw;
-    /*text-align: right;*/
-    text-align: end;
+    text-align: right;
     margin: 1vw 0;
 }
 
 .fa-github {
-    padding: 0.5vw;
-    border: dashed 2px gold;
+    padding: 2vw 1vw;
+    border: dashed 2px rgb(2, 105, 99);
+    border-radius: 50%;
 }
 
 .box-separation {
     width: 90%;
     margin: 2vw;
     height: 0.01vw;
-    color: #9d069d;
-    background-color: #9d069d;
+    color: rgb(184 237 236);
+    background-color: rgb(184 237 236)
 }
 
 .modal-list {
@@ -287,7 +285,7 @@ p {
     margin-top: 4vw;
     padding: 2vw 2vw;
     padding-bottom: 2vw;
-    border-top: 1.5vw solid #4162c3;
+    border-top: 1.5vw solid rgba(3, 121, 157, 0.85);
     font-family: 'nunito sans' ,verdana, sans-serif;
     line-height: 4vw;
 }
@@ -300,11 +298,12 @@ p {
 #contact-box p {
     font-size: 2.5vw;
     padding-left: 2vw;
+    font-weight: bold;
 }
 
 footer {
-    background-color: rgba(241, 229, 255, 0.85);
-    padding: 2vw;
+    background-color: rgba(3, 121, 157, 0.85);
+    padding: 1vw;
 }
 
 @media only screen and (min-width: 600px) {
@@ -323,7 +322,7 @@ footer {
     }
 
     #profile-pic {
-        width: 11vw;
+        width: 12vw;
         height: auto;
         margin: 1vw;
     }
@@ -334,7 +333,7 @@ footer {
 
     #pfolio-headbox h2 {
         padding-bottom: 1vw;
-        border-bottom: 1px solid rgb(65,7,157);
+        border-bottom: 1px solid rgb(184 237 236);
     }
 
     #pfolio-boxes-container {
@@ -361,13 +360,11 @@ footer {
     }
 
     .pfolio-text {
-        line-height: 1.6vw;
+        line-height: 1.8vw;
     }
 
     .git-icons-box {
-        display: flex;
         width: 40vw;
-        justify-content: space-around;
     }
 
     .portal-modals-box {
