@@ -35,14 +35,6 @@ a:active {
     text-decoration: underline;
 }
 
-/*a {*/
-/*    color: inherit;*/
-/*}*/
-
-/*.coloured-links {*/
-/*    color: rgb(65,7,157);*/
-/*}*/
-
 .nav-headers {
     font-family: 'Work sans', verdana, sans-serif;
     font-size: 3vw;
@@ -85,7 +77,6 @@ p {
     padding: 1vw;
     font-size: 2vw;
     font-family: 'Works Sans', 'nunito sans', sans-serif;
-    /*slight pulsing animation on this*/
 }
 
 .fboxbgcolors {
@@ -182,24 +173,30 @@ p {
     text-align: left;
 }
 
+.git-icons-box {
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;
+}
+
 .git-icon-p {
     padding-right: 2vw;
-    /*text-align: right;*/
-    text-align: end;
+    text-align: right;
     margin: 1vw 0;
 }
 
 .fa-github {
-    padding: 0.5vw;
-    border: dashed 2px gold;
+    padding: 2vw 1vw;
+    border: dashed 2px rgb(2, 105, 99);
+    border-radius: 50%;
 }
 
 .box-separation {
     width: 90%;
     margin: 2vw;
     height: 0.01vw;
-    color: #9d069d;
-    background-color: #9d069d;
+    color: rgb(184 237 236);
+    background-color: rgb(184 237 236)
 }
 
 .modal-list {
@@ -301,6 +298,7 @@ p {
 #contact-box p {
     font-size: 2.5vw;
     padding-left: 2vw;
+    font-weight: bold;
 }
 
 footer {
@@ -362,13 +360,11 @@ footer {
     }
 
     .pfolio-text {
-        line-height: 1.6vw;
+        line-height: 1.8vw;
     }
 
     .git-icons-box {
-        display: flex;
         width: 40vw;
-        justify-content: space-around;
     }
 
     .portal-modals-box {
