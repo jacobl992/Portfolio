@@ -120,7 +120,7 @@ p {
     font-family: 'courgette', serif;
 }
 
-#pfolio-headbox {
+.pfolio-headbox {
     width: 100vw;
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@ p {
     margin-bottom: 1.5vw;
 }
 
-#pfolio-headbox h2 {
+.pfolio-headbox h2 {
     margin: 0;
 }
 
@@ -327,11 +327,11 @@ footer {
         margin: 1vw;
     }
 
-    #pfolio-headbox {
+    .pfolio-headbox {
         margin-bottom: 2vw;
     }
 
-    #pfolio-headbox h2 {
+    .pfolio-headbox h2 {
         padding-bottom: 1vw;
         border-bottom: 1px solid rgb(184 237 236);
     }
